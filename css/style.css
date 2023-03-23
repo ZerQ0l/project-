@@ -1,0 +1,97 @@
+body{
+  margin:0;
+  padding:0;
+}
+
+
+.wrapper {
+    height: inherit;
+    width: inherit;
+    background-image: linear-gradient(to bottom, #ffffff, #00ff00);
+     padding: 5vw;
+ 
+}
+.header{
+ display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+
+
+
+
+
+
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition:0.6s;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+   color: black;
+  
+    background-color: purple;
+  border:3px solid white;
+  border-radius: 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
+
+.main {
+    display: grid;
+    grid-template-areas: "one two";
+}
+
+.section {
+    width: 50%;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+.two :hover {
+    transition: transform .7s ease-in-out;
+    transform: scale(0.5) rotate(45deg);
+}
